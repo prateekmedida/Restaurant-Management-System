@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Management System</title>
+    <link rel="stylesheet" href="Restaurant Management System(css).css">
+    <script defer src="Restaurant Management System.py"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="details-frame">
+            <h2>Customer Details</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter customer name">
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" placeholder="Enter customer contact">
+        </div>
+
+        <div class="menu-frame">
+            <h2>Menu</h2>
+            <div class="menu-header">
+                <span>Items</span>
+                <span>Quantity</span>
+            </div>
+            <div class="menu-item">
+                <label>Burger - ₹100</label>
+                <input type="number" min="0" id="burger" name="burger">
+            </div>
+            <div class="menu-item">
+                <label>Pizza - ₹200</label>
+                <input type="number" min="0" id="pizza" name="pizza">
+            </div>
+            <div class="menu-item">
+                <label>Pasta - ₹150</label>
+                <input type="number" min="0" id="pasta" name="pasta">
+            </div>
+            <div class="menu-item">
+                <label>Sandwich - ₹80</label>
+                <input type="number" min="0" id="sandwich" name="sandwich">
+            </div>
+            <div class="menu-item">
+                <label>Salad - ₹90</label>
+                <input type="number" min="0" id="salad" name="salad">
+            </div>
+            <div class="menu-item">
+                <label>Noodles - ₹60</label>
+                <input type="number" min="0" id="noodles" name="noodles">
+            </div>
+            <div class="menu-item">
+                <label>Shakes - ₹45</label>
+                <input type="number" min="0" id="shakes" name="shakes">
+            </div>
+            <div class="menu-item">
+                <label>Fruit juice - ₹35</label>
+                <input type="number" min="0" id="fruit juice" name="fruit juice">
+            </div>
+            <div class="menu-item">
+                <label>Water bottle - ₹20</label>
+                <input type="number" min="0" id="water bottle" name="water bottle">
+            </div>
+            <div class="menu-item">
+                <label>French fries - ₹90</label>
+                <input type="number" min="0" id="french fries" name="french fries">
+            </div>
+            <div class="menu-item">
+                <label>Biscuits - ₹30</label>
+                <input type="number" min="0" id="biscuits" name="biscuits">
+            </div>
+            <div class="menu-item">
+                <label>Chocolates - ₹40</label>
+                <input type="number" min="0" id="chocolates" name="chocolates">
+            </div>
+            <div class="menu-item">
+                <label>Pastries - ₹65</label>
+                <input type="number" min="0" id="pastries" name="pastries">
+            </div>
+            <div class="menu-item">
+                <label>Cold drink - ₹25</label>
+                <input type="number" min="0" id="cold drink" name="cold drink">
+            </div>
+        </div>
+
+        <div class="buttons-frame">
+            <button onclick="showBill()">Print Bill</button>
+            <button onclick="pastRecords()">Past Records</button>
+            <button onclick="clearSelection()">Clear Selection</button>
+        </div>
+
+        <div class="bill-frame">
+            <h2>Sample Bill</h2>
+            <pre id="bill-output"></pre>
+        </div>
+    </div>
+
+    <script src="Restaurant Management System(js).js"></script>
+</body>
+</html>
